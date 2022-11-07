@@ -56,7 +56,7 @@ body {
 }
 
 .container{
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
     margin-top: auto;
     overflow: hidden;
@@ -94,7 +94,7 @@ padding: 2.2rem;
 .footer p {
     margin: 0;
 }
-@media(max-width: 560px) {
+@media(max-width: 200px) {
     .header::after{
         height: 50vh;
     }
@@ -127,6 +127,46 @@ padding: 2.2rem;
     }
 }
 
+.resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+
+/**Movil**/
+
+@media (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+}
+
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
+
+
+/**Escritorio**/
+
+@media (min-width: 991px) {
+    .tablet {
+        display: none;
+    }
+    .movil {
+        display: none;
+    }
+}
 
 }
 
